@@ -46,7 +46,7 @@ The algorithms we choose for simulations should be quicker and lower time comple
 
 ## Results:
 
-## Quantitative Metrics:
+### Quantitative Metrics:
 
 To quantify the effectiveness of our utilized ML techniques, we may want to consider using various loss and scoring functions for the various parts of our project. When working with logistic regression, for example, we may want to use Log Loss as our loss function as it is designed for quantifying logistic regression algorithms, and may also want to consider Area Under the ROC Curve (AUC) as another valuable loss function. When working with Linear Regression for various purposes throughout our project, we may also want to consider the Mean Squared Error (MSE) to quantify how far from the average value our Linear Regression result was. One last metric to consider for both of our regressions is the Root MSE, which is another popular metric for quantifying the quality of linear and logarithmic regressions. When working with our unsupervised algorithm, K-means, it may be valuable to also consider utilizing Silhouette Analysis to determine whether points generally fall within or close to within their respective clusters.
 
