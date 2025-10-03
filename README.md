@@ -1,10 +1,29 @@
 # ML4641_Robotics_Project
 
-
-
 Currently considered dataset:
 https://www.kaggle.com/datasets/samehraouf/fault-detection-in-hexapod-robot-joints-dataset/data
 
+## Introduction
+
+Robotic systems are deployed often operate in demanding environments where they must maintain high reliability and safety. In many contexts including manufacturing, search and rescue, medicine, and more, failure in a robot join or actuator/sensor can cause large disruptions or damage. The ability to detect, classify, and isolate faults in robotics subsystems in real time is critical to maintaining this standard. Fault detection and diagnosis (FDD) in robotic systems had been studied both from model-based and data-driven perspectives. In model-based approaches, observers, parity checks, and residual generation techniques are used to detect deviation from expected dynamics. In data-driven approaches, sensor and control signals are treated as signals to be classified or regressed using machine learning models. 
+
+
+## Dataset
+
+In this project we propose to build upon data-driven fault detection for robotic joins using the public “Falt Detection in Hexapod Robot Joints” dataset from Kaggle. We aim to apply machine learning models to this dataset to find and detect robotic faults. This dataset provides timeseries readings from hexapod robot joints under various fault conditions including offset error, gain error, and combined faults. Features include position data of the joins and slopes with respect to different axis. The dataset is labeled indicating the fault class of the sample making this a supervised learning problem. We aim to augment this dataset with simulated dataset from Georgia Tech’s Robotarium where we will create similar conditions to the ones in the Hexapod Robot Joints and work to optimize and find enhancements in real world robotic systems.
+
+## Background
+
+Recent work in data-driven robotic optimization approaches includes Fang et al. (2025) who developed a Two-States Random Forest (TSRF) algorithm applied to hexapod robot join fault detection. By layering two random forest classifiers and using class-probability vectors from the first stage as meta-features for the second, they claim 99.7% accuracy over baseline random forest models. Hu et al. (2022) apply a backpropagation neural network approach to robotic fault diagnosis, exploring how different error magnitudes and sampling frequencies influence accuracy. They report a diagnostic accuracy of up to 99.17% in their simulation. 
+
+
+## Problem Definition
+
+From these works, several recurring themes emerge. First, faults often include constant offset, gain error, stuck or drift behavior in sensors or actuators, and sometimes abrupt failures. Second, real-world systems have measurement noise, so robustness to noise or disturbance is critical. Third, distinguishing which joint or subsystem is faulty (sensor vs. actuator) is more challenging than simply detecting a fault. These challenges can be solved by using data-driven machine learning approaches which we aim to do with the hexapod dataset. 
+
+Given sensor and actuator readings from the joins of a hexapod robot, the goal is to detect and classify faults. We plan to benchmark several models on this task, compare their performance, and analyze feature importance, misclassifications, and robustness to noise. 
+
+This problem is worth tackling due to its practical relevance, extensions to other research fields, and potential for novelty. Fault detection in robotic joins is crucial for maintaining uptime, safety, and reliability. Even subtle faults (sensor drift or gain error) can degrade performance gradually and lead to wear or failure. The hexapod is a suitable test bed with multiple joints. Analyzing this dataset might show that certain features and methods yield better diagnostic accuracy over previous methods providing a novel insight into fault detection that can be generalized to other systems as well. 
 
 
 ## Methods
