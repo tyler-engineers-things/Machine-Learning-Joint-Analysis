@@ -10,11 +10,11 @@ Robotic systems are deployed often operate in demanding environments where they 
 
 ### Dataset
 
-In this project we propose to build upon data-driven fault detection for robotic joins using the public “Falt Detection in Hexapod Robot Joints” dataset from Kaggle. We aim to apply machine learning models to this dataset to find and detect robotic faults. This dataset provides timeseries readings from hexapod robot joints under various fault conditions including offset error, gain error, and combined faults. Features include position data of the joins and slopes with respect to different axis. The dataset is labeled indicating the fault class of the sample making this a supervised learning problem. We aim to augment this dataset with simulated dataset from Georgia Tech’s Robotarium where we will create similar conditions to the ones in the Hexapod Robot Joints and work to optimize and find enhancements in real world robotic systems.
+In this project we propose to build upon data-driven fault detection for robotic joins using the public “Falt Detection in Hexapod Robot Joints” dataset from Kaggle [3]. We aim to apply machine learning models to this dataset to find and detect robotic faults. This dataset provides timeseries readings from hexapod robot joints under various fault conditions including offset error, gain error, and combined faults. Features include position data of the joins and slopes with respect to different axis. The dataset is labeled indicating the fault class of the sample making this a supervised learning problem. We aim to augment this dataset with simulated dataset from Georgia Tech’s Robotarium where we will create similar conditions to the ones in the Hexapod Robot Joints and work to optimize and find enhancements in real world robotic systems [4].
 
 ### Background
 
-Recent work in data-driven robotic optimization approaches includes Fang et al. (2025) who developed a Two-States Random Forest (TSRF) algorithm applied to hexapod robot join fault detection. By layering two random forest classifiers and using class-probability vectors from the first stage as meta-features for the second, they claim 99.7% accuracy over baseline random forest models. Hu et al. (2022) apply a backpropagation neural network approach to robotic fault diagnosis, exploring how different error magnitudes and sampling frequencies influence accuracy. They report a diagnostic accuracy of up to 99.17% in their simulation. 
+Recent work in data-driven robotic optimization approaches include a Two-States Random Forest (TSRF) algorithm applied to hexapod robot join fault detection [1]. By layering two random forest classifiers and using class-probability vectors from the first stage as meta-features for the second, they claim 99.7% accuracy over baseline random forest models. Another approach appled a backpropagation neural network approach to robotic fault diagnosis, exploring how different error magnitudes and sampling frequencies influence accuracy [2]. They report a diagnostic accuracy of up to 99.17% in their simulation. 
 
 
 ## Problem Definition
@@ -46,4 +46,10 @@ The algorithms we choose for simulations should be quicker and lower time comple
 
 ## References
 
-[1]Q. Fang, Y. Men, K. Zhang, M. Yu, and Y. Liu, “Real-Time Joint Fault Detection and Diagnosis of Hexapod Robot Based on Improved Random Forest,” Processes, vol. 13, no. 9, pp. 2762–2762, Aug. 2025, doi: https://doi.org/10.3390/pr13092762.[2]M. Hu, J. Wu, J. Yang, L. Zhang, and F. Yang, “Fault diagnosis of robot joint based on BP neural network,” Robotica, vol. 40, no. 12, pp. 4388–4404, Jul. 2022, doi: https://doi.org/10.1017/s0263574722000984.[3]S. Raouf, “Fault Detection in Hexapod Robot Joints(One Joint),” Kaggle.com, 2024. https://www.kaggle.com/datasets/samehraouf/fault-detection-in-hexapod-robot-joints-dataset/data (accessed Oct. 03, 2025).[4]“Robotarium,” Gatech.edu, 2025. https://www.robotarium.gatech.edu/ (accessed Oct. 03, 2025).
+[1]Q. Fang, Y. Men, K. Zhang, M. Yu, and Y. Liu, “Real-Time Joint Fault Detection and Diagnosis of Hexapod Robot Based on Improved Random Forest,” Processes, vol. 13, no. 9, pp. 2762–2762, Aug. 2025, doi: https://doi.org/10.3390/pr13092762.
+
+[2]M. Hu, J. Wu, J. Yang, L. Zhang, and F. Yang, “Fault diagnosis of robot joint based on BP neural network,” Robotica, vol. 40, no. 12, pp. 4388–4404, Jul. 2022, doi: https://doi.org/10.1017/s0263574722000984.
+
+[3]S. Raouf, “Fault Detection in Hexapod Robot Joints(One Joint),” Kaggle.com, 2024. https://www.kaggle.com/datasets/samehraouf/fault-detection-in-hexapod-robot-joints-dataset/data (accessed Oct. 03, 2025).
+
+[4]“Robotarium,” Gatech.edu, 2025. https://www.robotarium.gatech.edu/ (accessed Oct. 03, 2025).
