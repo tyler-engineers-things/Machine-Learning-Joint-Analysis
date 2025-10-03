@@ -44,6 +44,19 @@ As logistic regression is a supervised algorithm, when we transition the model t
 
 The algorithms we choose for simulations should be quicker and lower time complexity due to the constraints often present in the field of robotics.
 
+## Results:
+
+### Quantitative Metrics:
+
+To quantify the effectiveness of our utilized ML techniques, we may want to consider using various loss and scoring functions for the various parts of our project. When working with logistic regression, for example, we may want to use Log Loss as our loss function as it is designed for quantifying logistic regression algorithms, and may also want to consider Area Under the ROC Curve (AUC) as another valuable loss function. When working with Linear Regression for various purposes throughout our project, we may also want to consider the Mean Squared Error (MSE) to quantify how far from the average value our Linear Regression result was. One last metric to consider for both of our regressions is the Root MSE, which is another popular metric for quantifying the quality of linear and logarithmic regressions. When working with our unsupervised algorithm, K-means, it may be valuable to also consider utilizing Silhouette Analysis to determine whether points generally fall within or close to within their respective clusters.
+
+### Project Goals and Expected Results:
+
+With this project, we are hoping to find methods for which joint failures can be minimized or eliminated all-together to ensure robots are gentler and more capable of working with humans and other fragile objects. With the proliferation of robots in every facet of our lives, it is crucial that projects be put forth that ensure these robots remain safe to use by the average layperson, and failing to do so may result in unintended and unnecessary injuries and similar consequences. Our project’s intent is to promote the sustainability and ethical use of robotic technologies in various consumer-facing economic spheres, and if successful may contribute greatly to ensuring ML techniques result in robotics-related injuries reducing to a minimum.
+
+Based on our research of ML algorithms, techniques, and metrics, we expect our project will result in a successful reduction in the proliferation and overexertion of faulty joints, ensuring greater robotic stability which will contribute to greater robotic safety in all facets of our economic life.
+
+
 ## References
 
 [1]Q. Fang, Y. Men, K. Zhang, M. Yu, and Y. Liu, “Real-Time Joint Fault Detection and Diagnosis of Hexapod Robot Based on Improved Random Forest,” Processes, vol. 13, no. 9, pp. 2762–2762, Aug. 2025, doi: https://doi.org/10.3390/pr13092762.
