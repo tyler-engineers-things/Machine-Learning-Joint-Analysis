@@ -53,3 +53,57 @@ The algorithms we choose for simulations should be quicker and lower time comple
 [3]S. Raouf, “Fault Detection in Hexapod Robot Joints(One Joint),” Kaggle.com, 2024. https://www.kaggle.com/datasets/samehraouf/fault-detection-in-hexapod-robot-joints-dataset/data (accessed Oct. 03, 2025).
 
 [4]“Robotarium,” Gatech.edu, 2025. https://www.robotarium.gatech.edu/ (accessed Oct. 03, 2025).
+
+
+## Gantt Chart
+```mermaid
+gantt
+    title Sample Project Timeline
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
+    excludes    weekends
+
+    section Phase 1: Initial Planning
+    Project Team Composition     :a1, 2024-01-17, 15d
+
+    section Phase 2: Proposal Writing
+    Introduction & Background    :a2, 2024-02-02, 21d
+    Problem Definition           :a3, 2024-02-02, 21d
+    Methods                      :a4, 2024-02-02, 21d
+    Potential Dataset            :a5, 2024-02-02, 21d
+    Potential Results & Discussion :a6, 2024-02-02, 21d
+    Video Creation & Recording (Proposal) :a7, 2024-02-10, 13d
+    GitHub Page (Proposal)       :a8, 2024-02-10, 13d
+
+    section Phase 2: Model 1
+    M1 Design & Selection        :b1, 2024-02-17, 10d
+    M1 Data Cleaning             :b2, 2024-02-17, 10d
+    M1 Data Visualization        :b3, 2024-02-17, 10d
+    M1 Feature Reduction         :b4, 2024-02-17, 10d
+    M1 Implementation & Coding  :b5, 2024-02-28, 19d
+    M1 Results Evaluation        :b6, 2024-03-18, 2d
+
+    section Phase 2: Model 2
+    M2 Design & Selection        :c1, 2024-02-28, 8d
+    M2 Data Cleaning             :c2, 2024-02-28, 8d
+    M2 Data Visualization        :c3, 2024-02-28, 8d
+    M2 Feature Reduction         :c4, 2024-02-28, 8d
+    M2 Coding & Implementation   :c5, 2024-03-07, 10d
+    M2 Results Evaluation        :c6, 2024-03-18, 2d
+
+    section Phase 2: Reporting
+    Midterm Report               :d1, 2024-03-28, 1d
+
+    section Phase 3: Model 3
+    M3 Design & Selection        :e1, 2024-03-14, 6d
+    M3 Data Cleaning             :e2, 2024-03-14, 6d
+    M3 Data Visualization        :e3, 2024-03-14, 6d
+    M3 Feature Reduction         :e4, 2024-03-14, 6d
+    M3 Implementation & Coding  :e5, 2024-04-06, 8d
+    M3 Results Evaluation        :e6, 2024-04-15, 2d
+
+    section Phase 3: Final Deliverables
+    M1-M3 Comparison             :f1, 2024-04-18, 8d
+    Video Creation & Recording (Final) :f2, 2024-04-18, 8d
+    Final Report                 :f3, 2024-04-18, 5d
+```
