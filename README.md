@@ -7,9 +7,9 @@ https://www.kaggle.com/datasets/samehraouf/fault-detection-in-hexapod-robot-join
 
 
 
-# Methods
+## Methods
 
-Data Preprocessing:
+### Data Preprocessing:
 
 Based on the dataset provided, we will first find data points with pose or slope values drastically different from most other points in the dataset through RANSAC, which will iteratively select random values in the dataset and fit a model based on these random values. Inliers will then be determined based on a margin around the generated line, and outliers will be discarded. RANSAC will be run until the line with the largest number of inliers is found, and all outliers remaining will be discarded. We may use PyTorch’s torch-ransac3d for this purpose, which will assist in cleaning our data to ensure only important values are considered.
 
