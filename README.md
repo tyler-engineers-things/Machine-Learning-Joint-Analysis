@@ -61,6 +61,8 @@ With this project, we expect to minimize or eliminate joint failures ensuring ro
 
 [4]“Robotarium,” Gatech.edu, 2025. https://www.robotarium.gatech.edu/ (accessed Oct. 03, 2025).
 
+[5]"MuJoCo," DeepMind Technologies Limited, 2025. https://mujoco.org/ (accessed Oct. 03, 2025).
+
 
 ## Gantt Chart
 <pre class="mermaid">
