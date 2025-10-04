@@ -74,55 +74,42 @@ gantt
     title Hexapod Fault Detection
     dateFormat  YYYY-MM-DD
     axisFormat  %b %d
-    excludes    weekends
 
     section Project Proposal
-    Introduction & Background        :a1, 2025-09-27, 6d
-    Problem Definition               :a2, 2025-09-27, 6d
-    Methods                          :a3, 2025-09-27, 6d
-    Potential Results & Discussion   :a4, 2025-09-27, 6d
-    Video Recording                  :a5, 2025-09-27, 6d
-    GitHub Page                      :a6, 2025-09-27, 6d
+    Introduction & Background        :active, a1, 2025-09-27, 6d
+    Problem Definition               :active, a2, 2025-09-27, 6d
+    Methods                          :active, a3, 2025-09-27, 6d
+    Potential Results & Discussion   :active, a4, 2025-09-27, 6d
+    Video Recording                  :active, a5, 2025-09-27, 6d
+    GitHub Page                      :active, a6, 2025-09-27, 6d
 
     section Model 1
-    Data Sourcing and Cleaning (M1)  :b1, 2025-10-07, 30d
-    Model Selection (M1)             :b2, 2025-10-07, 30d
-    Data Pre-Processing (M1)         :b3, 2025-10-07, 30d
-    Model Coding (M1)                :b4, 2025-10-07, 30d
-    Results Evaluation (M1)          :b5, 2025-10-07, 30d
-    Midterm Report                   :b6, 2025-10-07, 30d
+    Data Sourcing and Cleaning (M1)  :a7, 2025-10-07, 30d
+    Model Selection (M1)             :a8, 2025-10-07, 30d
+    Data Pre-Processing (M1)         :a9, 2025-10-07, 30d
+    Model Coding (M1)                :a10, 2025-10-07, 30d
+    Results Evaluation (M1)          :a11, 2025-10-07, 30d
+    Midterm Report                   :a12, 2025-10-07, 30d
 
     section Model 2
-    Data Sourcing and Cleaning (M2)  :c1, 2025-10-07, 30d
-    Model Selection (M2)             :c2, 2025-10-07, 30d
-    Data Pre-Processing (M2)         :c3, 2025-10-07, 30d
-    Model Coding (M2)                :c4, 2025-10-07, 30d
-    Results Evaluation (M2)          :c5, 2025-10-07, 30d
+    Data Sourcing and Cleaning (M2)  :b1, 2025-10-07, 30d
+    Model Selection (M2)             :b2, 2025-10-07, 30d
+    Data Pre-Processing (M2)         :b3, 2025-10-07, 30d
+    Model Coding (M2)                :b4, 2025-10-07, 30d
+    Results Evaluation (M2)          :b5, 2025-10-07, 30d
 
     section Model 3
-    Data Sourcing and Cleaning (M3)  :d1, 2025-11-07, 25d
-    Model Selection (M3)             :d2, 2025-11-07, 25d
-    Data Pre-Processing (M3)         :d3, 2025-11-07, 25d
-    Model Coding (M3)                :d4, 2025-11-07, 25d
-    Results Evaluation (M3)          :d5, 2025-11-07, 25d
+    Data Sourcing and Cleaning (M3)  :c1, 2025-11-07, 25d
+    Model Selection (M3)             :c2, 2025-11-07, 25d
+    Data Pre-Processing (M3)         :c3, 2025-11-07, 25d
+    Model Coding (M3)                :c4, 2025-11-07, 25d
+    Results Evaluation (M3)          :c5, 2025-11-07, 25d
 
     section Evaluation and Final
-    Model Comparison                 :e1, 2025-11-07, 25d
-    Presentation                     :e2, 2025-11-07, 25d
-    Recording                        :e3, 2025-11-07, 25d
-    Final Report                     :e4, 2025-11-07, 25d
-
-    %% Define person-based color classes
-    classDef shreyas fill:#B3D9FF,stroke:#000,stroke-width:1px;
-    classDef tyler   fill:#C5E1C5,stroke:#000,stroke-width:1px;
-    classDef eshaan  fill:#D1C4E9,stroke:#000,stroke-width:1px;
-    classDef team    fill:#E0E0E0,stroke:#000,stroke-width:1px;
-
-    %% Assign tasks to color classes
-    class a1,a2,b1,b4,c3,d2,d5 shreyas;
-    class a3,a4,a6,b2,b5,c1,d3,d4 tyler;
-    class a5,b3,b6,c2,c4,c5,d1 eshaan;
-    class e1,e2,e3,e4 team;
+    Model Comparison                 :done, d1, 2025-11-07, 25d
+    Presentation                     :done, d2, 2025-11-07, 25d
+    Recording                        :done, d3, 2025-11-07, 25d
+    Final Report                     :done, d4, 2025-11-07, 25d
 </pre>
 
 ```mermaid
@@ -130,55 +117,42 @@ gantt
     title Hexapod Fault Detection
     dateFormat  YYYY-MM-DD
     axisFormat  %b %d
-    excludes    weekends
 
     section Project Proposal
-    Introduction & Background        :a1, 2025-09-27, 6d
-    Problem Definition               :a2, 2025-09-27, 6d
-    Methods                          :a3, 2025-09-27, 6d
-    Potential Results & Discussion   :a4, 2025-09-27, 6d
-    Video Recording                  :a5, 2025-09-27, 6d
-    GitHub Page                      :a6, 2025-09-27, 6d
+    Introduction & Background        :active, a1, 2025-09-27, 6d
+    Problem Definition               :active, a2, 2025-09-27, 6d
+    Methods                          :active, a3, 2025-09-27, 6d
+    Potential Results & Discussion   :active, a4, 2025-09-27, 6d
+    Video Recording                  :active, a5, 2025-09-27, 6d
+    GitHub Page                      :active, a6, 2025-09-27, 6d
 
     section Model 1
-    Data Sourcing and Cleaning (M1)  :b1, 2025-10-07, 30d
-    Model Selection (M1)             :b2, 2025-10-07, 30d
-    Data Pre-Processing (M1)         :b3, 2025-10-07, 30d
-    Model Coding (M1)                :b4, 2025-10-07, 30d
-    Results Evaluation (M1)          :b5, 2025-10-07, 30d
-    Midterm Report                   :b6, 2025-10-07, 30d
+    Data Sourcing and Cleaning (M1)  :a7, 2025-10-07, 30d
+    Model Selection (M1)             :a8, 2025-10-07, 30d
+    Data Pre-Processing (M1)         :a9, 2025-10-07, 30d
+    Model Coding (M1)                :a10, 2025-10-07, 30d
+    Results Evaluation (M1)          :a11, 2025-10-07, 30d
+    Midterm Report                   :a12, 2025-10-07, 30d
 
     section Model 2
-    Data Sourcing and Cleaning (M2)  :c1, 2025-10-07, 30d
-    Model Selection (M2)             :c2, 2025-10-07, 30d
-    Data Pre-Processing (M2)         :c3, 2025-10-07, 30d
-    Model Coding (M2)                :c4, 2025-10-07, 30d
-    Results Evaluation (M2)          :c5, 2025-10-07, 30d
+    Data Sourcing and Cleaning (M2)  :b1, 2025-10-07, 30d
+    Model Selection (M2)             :b2, 2025-10-07, 30d
+    Data Pre-Processing (M2)         :b3, 2025-10-07, 30d
+    Model Coding (M2)                :b4, 2025-10-07, 30d
+    Results Evaluation (M2)          :b5, 2025-10-07, 30d
 
     section Model 3
-    Data Sourcing and Cleaning (M3)  :d1, 2025-11-07, 25d
-    Model Selection (M3)             :d2, 2025-11-07, 25d
-    Data Pre-Processing (M3)         :d3, 2025-11-07, 25d
-    Model Coding (M3)                :d4, 2025-11-07, 25d
-    Results Evaluation (M3)          :d5, 2025-11-07, 25d
+    Data Sourcing and Cleaning (M3)  :c1, 2025-11-07, 25d
+    Model Selection (M3)             :c2, 2025-11-07, 25d
+    Data Pre-Processing (M3)         :c3, 2025-11-07, 25d
+    Model Coding (M3)                :c4, 2025-11-07, 25d
+    Results Evaluation (M3)          :c5, 2025-11-07, 25d
 
     section Evaluation and Final
-    Model Comparison                 :e1, 2025-11-07, 25d
-    Presentation                     :e2, 2025-11-07, 25d
-    Recording                        :e3, 2025-11-07, 25d
-    Final Report                     :e4, 2025-11-07, 25d
-
-    %% Define person-based color classes
-    classDef shreyas fill:#B3D9FF,stroke:#000,stroke-width:1px;
-    classDef tyler   fill:#C5E1C5,stroke:#000,stroke-width:1px;
-    classDef eshaan  fill:#D1C4E9,stroke:#000,stroke-width:1px;
-    classDef team    fill:#E0E0E0,stroke:#000,stroke-width:1px;
-
-    %% Assign tasks to color classes
-    class a1,a2,b1,b4,c3,d2,d5 shreyas;
-    class a3,a4,a6,b2,b5,c1,d3,d4 tyler;
-    class a5,b3,b6,c2,c4,c5,d1 eshaan;
-    class e1,e2,e3,e4 team;
+    Model Comparison                 :done, d1, 2025-11-07, 25d
+    Presentation                     :done, d2, 2025-11-07, 25d
+    Recording                        :done, d3, 2025-11-07, 25d
+    Final Report                     :done, d4, 2025-11-07, 25d
 ```
 
 <script type="module">
