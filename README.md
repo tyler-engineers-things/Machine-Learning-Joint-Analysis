@@ -71,52 +71,44 @@ Based on our research of ML algorithms, techniques, and metrics, we expect our p
 ## Gantt Chart
 ```mermaid
 gantt
-    title Sample Project Timeline
+    title Hexapod Fault Detection
     dateFormat  YYYY-MM-DD
     axisFormat  %b %d
     excludes    weekends
 
-    section Phase 1: Initial Planning
-    Project Team Composition     :a1, 2024-01-17, 15d
+    section Project Proposal
+    Introduction & Background        :a1, 2025-09-27, 6d
+    Problem Definition               :a2, 2025-09-27, 6d
+    Methods                          :a3, 2025-09-27, 6d
+    Potential Results & Discussion   :a4, 2025-09-27, 6d
+    Video Recording                  :a5, 2025-09-27, 6d
+    GitHub Page                      :a6, 2025-09-27, 6d
 
-    section Phase 2: Proposal Writing
-    Introduction & Background    :a2, 2024-02-02, 21d
-    Problem Definition           :a3, 2024-02-02, 21d
-    Methods                      :a4, 2024-02-02, 21d
-    Potential Dataset            :a5, 2024-02-02, 21d
-    Potential Results & Discussion :a6, 2024-02-02, 21d
-    Video Creation & Recording (Proposal) :a7, 2024-02-10, 13d
-    GitHub Page (Proposal)       :a8, 2024-02-10, 13d
+    section Model 1
+    Data Sourcing and Cleaning (M1)  :b1, 2025-10-07, 30d
+    Model Selection (M1)            :b2, 2025-10-07, 30d
+    Data Pre-Processing (M1)        :b3, 2025-10-07, 30d
+    Model Coding (M1)               :b4, 2025-10-07, 30d
+    Results Evaluation (M1)         :b5, 2025-10-07, 30d
+    Midterm Report                  :b6, 2025-10-07, 30d
 
-    section Phase 2: Model 1
-    M1 Design & Selection        :b1, 2024-02-17, 10d
-    M1 Data Cleaning             :b2, 2024-02-17, 10d
-    M1 Data Visualization        :b3, 2024-02-17, 10d
-    M1 Feature Reduction         :b4, 2024-02-17, 10d
-    M1 Implementation & Coding  :b5, 2024-02-28, 19d
-    M1 Results Evaluation        :b6, 2024-03-18, 2d
+    section Model 2
+    Data Sourcing and Cleaning (M2) :c1, 2025-10-07, 30d
+    Model Selection (M2)            :c2, 2025-10-07, 30d
+    Data Pre-Processing (M2)        :c3, 2025-10-07, 30d
+    Model Coding (M2)               :c4, 2025-10-07, 30d
+    Results Evaluation (M2)         :c5, 2025-10-07, 30d
 
-    section Phase 2: Model 2
-    M2 Design & Selection        :c1, 2024-02-28, 8d
-    M2 Data Cleaning             :c2, 2024-02-28, 8d
-    M2 Data Visualization        :c3, 2024-02-28, 8d
-    M2 Feature Reduction         :c4, 2024-02-28, 8d
-    M2 Coding & Implementation   :c5, 2024-03-07, 10d
-    M2 Results Evaluation        :c6, 2024-03-18, 2d
+    section Model 3
+    Data Sourcing and Cleaning (M3) :d1, 2025-11-07, 25d
+    Model Selection (M3)            :d2, 2025-11-07, 25d
+    Data Pre-Processing (M3)        :d3, 2025-11-07, 25d
+    Model Coding (M3)               :d4, 2025-11-07, 25d
+    Results Evaluation (M3)         :d5, 2025-11-07, 25d
 
-    section Phase 2: Reporting
-    Midterm Report               :d1, 2024-03-28, 1d
-
-    section Phase 3: Model 3
-    M3 Design & Selection        :e1, 2024-03-14, 6d
-    M3 Data Cleaning             :e2, 2024-03-14, 6d
-    M3 Data Visualization        :e3, 2024-03-14, 6d
-    M3 Feature Reduction         :e4, 2024-03-14, 6d
-    M3 Implementation & Coding  :e5, 2024-04-06, 8d
-    M3 Results Evaluation        :e6, 2024-04-15, 2d
-
-    section Phase 3: Final Deliverables
-    M1-M3 Comparison             :f1, 2024-04-18, 8d
-    Video Creation & Recording (Final) :f2, 2024-04-18, 8d
-    Final Report                 :f3, 2024-04-18, 5d
+    section Evaluation and Final
+    Model Comparison                :e1, 2025-11-07, 25d
+    Presentation                    :e2, 2025-11-07, 25d
+    Recording                       :e3, 2025-11-07, 25d
+    Final Report                    :e4, 2025-11-07, 25d
 ```
