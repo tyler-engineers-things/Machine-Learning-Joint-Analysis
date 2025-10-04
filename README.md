@@ -66,6 +66,49 @@ With this project, we expect to minimize or eliminate joint failures ensuring ro
 
 ## Gantt Chart
 
+<pre class="mermaid">
+gantt
+    title Hexapod Fault Detection
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
+
+    section Project Proposal
+    Introduction & Background        :active, a1, 2025-09-27, 6d
+    Problem Definition               :active, a2, 2025-09-27, 6d
+    Methods                          :active, a3, 2025-09-27, 6d
+    Potential Results & Discussion   :active, a4, 2025-09-27, 6d
+    Video Recording                  :active, a5, 2025-09-27, 6d
+    GitHub Page                      :active, a6, 2025-09-27, 6d
+
+    section Model 1
+    Data Sourcing and Cleaning (M1)  :a7, 2025-10-07, 30d
+    Model Selection (M1)             :a8, 2025-10-07, 30d
+    Data Pre-Processing (M1)         :a9, 2025-10-07, 30d
+    Model Coding (M1)                :a10, 2025-10-07, 30d
+    Results Evaluation (M1)          :a11, 2025-10-07, 30d
+    Midterm Report                   :a12, 2025-10-07, 30d
+
+    section Model 2
+    Data Sourcing and Cleaning (M2)  :b1, 2025-10-07, 30d
+    Model Selection (M2)             :b2, 2025-10-07, 30d
+    Data Pre-Processing (M2)         :b3, 2025-10-07, 30d
+    Model Coding (M2)                :b4, 2025-10-07, 30d
+    Results Evaluation (M2)          :b5, 2025-10-07, 30d
+
+    section Model 3
+    Data Sourcing and Cleaning (M3)  :c1, 2025-11-07, 25d
+    Model Selection (M3)             :c2, 2025-11-07, 25d
+    Data Pre-Processing (M3)         :c3, 2025-11-07, 25d
+    Model Coding (M3)                :c4, 2025-11-07, 25d
+    Results Evaluation (M3)          :c5, 2025-11-07, 25d
+
+    section Evaluation and Final
+    Model Comparison                 :done, d1, 2025-11-07, 25d
+    Presentation                     :done, d2, 2025-11-07, 25d
+    Recording                        :done, d3, 2025-11-07, 25d
+    Final Report                     :done, d4, 2025-11-07, 25d
+</pre>
+
 ```mermaid
 gantt
     title Hexapod Fault Detection
