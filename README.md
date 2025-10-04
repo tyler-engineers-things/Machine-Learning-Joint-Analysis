@@ -158,3 +158,12 @@ gantt
 		theme: 'dark'
 	});
 </script>
+
+
+## Contribution Table
+
+| Team Member | Contribution |
+|-------------|--------------|
+| Shreyas | Final report intro & problem definition • Recording: intro & problem definition • Gantt Chart |
+| Tyler | Final report methods & results • Recording: ML algorithms & results/discussion • GitHub setup |
+| Eshaan | Slides creation & summarization • Recording: Dataset & data processing |
