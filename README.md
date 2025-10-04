@@ -69,7 +69,7 @@ Based on our research of ML algorithms, techniques, and metrics, we expect our p
 
 
 ## Gantt Chart
-```mermaid
+<pre class="mermaid">
 gantt
     title Hexapod Fault Detection
     dateFormat  YYYY-MM-DD
@@ -111,4 +111,12 @@ gantt
     Presentation                    :e2, 2025-11-07, 25d
     Recording                       :e3, 2025-11-07, 25d
     Final Report                    :e4, 2025-11-07, 25d
-```
+</pre>
+
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+	mermaid.initialize({
+		startOnLoad: true,
+		theme: 'dark'
+	});
+</script>
