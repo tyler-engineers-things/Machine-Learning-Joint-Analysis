@@ -76,41 +76,44 @@ gantt
     axisFormat  %b %d
     excludes    weekends
 
+    %% COLOR LEGEND (inline comment only)
+    %% Shreyas = light blue | Tyler = light green | Eshaan = light purple | All = light gray
+
     section Project Proposal
-    Introduction & Background        :a1, 2025-09-27, 6d
-    Problem Definition               :a2, 2025-09-27, 6d
-    Methods                          :a3, 2025-09-27, 6d
-    Potential Results & Discussion   :a4, 2025-09-27, 6d
-    Video Recording                  :a5, 2025-09-27, 6d
-    GitHub Page                      :a6, 2025-09-27, 6d
+    Introduction & Background        :a1, 2025-09-27, 6d, color:#B3D9FF
+    Problem Definition               :a2, 2025-09-27, 6d, color:#B3D9FF
+    Methods                          :a3, 2025-09-27, 6d, color:#C5E1C5
+    Potential Results & Discussion   :a4, 2025-09-27, 6d, color:#C5E1C5
+    Video Recording                  :a5, 2025-09-27, 6d, color:#D1C4E9
+    GitHub Page                      :a6, 2025-09-27, 6d, color:#C5E1C5
 
     section Model 1
-    Data Sourcing and Cleaning (M1)  :b1, 2025-10-07, 30d
-    Model Selection (M1)            :b2, 2025-10-07, 30d
-    Data Pre-Processing (M1)        :b3, 2025-10-07, 30d
-    Model Coding (M1)               :b4, 2025-10-07, 30d
-    Results Evaluation (M1)         :b5, 2025-10-07, 30d
-    Midterm Report                  :b6, 2025-10-07, 30d
+    Data Sourcing and Cleaning (M1)  :b1, 2025-10-07, 30d, color:#B3D9FF
+    Model Selection (M1)            :b2, 2025-10-07, 30d, color:#C5E1C5
+    Data Pre-Processing (M1)        :b3, 2025-10-07, 30d, color:#D1C4E9
+    Model Coding (M1)               :b4, 2025-10-07, 30d, color:#B3D9FF
+    Results Evaluation (M1)         :b5, 2025-10-07, 30d, color:#C5E1C5
+    Midterm Report                  :b6, 2025-10-07, 30d, color:#D1C4E9
 
     section Model 2
-    Data Sourcing and Cleaning (M2) :c1, 2025-10-07, 30d
-    Model Selection (M2)            :c2, 2025-10-07, 30d
-    Data Pre-Processing (M2)        :c3, 2025-10-07, 30d
-    Model Coding (M2)               :c4, 2025-10-07, 30d
-    Results Evaluation (M2)         :c5, 2025-10-07, 30d
+    Data Sourcing and Cleaning (M2) :c1, 2025-10-07, 30d, color:#C5E1C5
+    Model Selection (M2)            :c2, 2025-10-07, 30d, color:#D1C4E9
+    Data Pre-Processing (M2)        :c3, 2025-10-07, 30d, color:#B3D9FF
+    Model Coding (M2)               :c4, 2025-10-07, 30d, color:#D1C4E9
+    Results Evaluation (M2)         :c5, 2025-10-07, 30d, color:#D1C4E9
 
     section Model 3
-    Data Sourcing and Cleaning (M3) :d1, 2025-11-07, 25d
-    Model Selection (M3)            :d2, 2025-11-07, 25d
-    Data Pre-Processing (M3)        :d3, 2025-11-07, 25d
-    Model Coding (M3)               :d4, 2025-11-07, 25d
-    Results Evaluation (M3)         :d5, 2025-11-07, 25d
+    Data Sourcing and Cleaning (M3) :d1, 2025-11-07, 25d, color:#D1C4E9
+    Model Selection (M3)            :d2, 2025-11-07, 25d, color:#B3D9FF
+    Data Pre-Processing (M3)        :d3, 2025-11-07, 25d, color:#C5E1C5
+    Model Coding (M3)               :d4, 2025-11-07, 25d, color:#C5E1C5
+    Results Evaluation (M3)         :d5, 2025-11-07, 25d, color:#B3D9FF
 
     section Evaluation and Final
-    Model Comparison                :e1, 2025-11-07, 25d
-    Presentation                    :e2, 2025-11-07, 25d
-    Recording                       :e3, 2025-11-07, 25d
-    Final Report                    :e4, 2025-11-07, 25d
+    Model Comparison                :e1, 2025-11-07, 25d, color:#E0E0E0
+    Presentation                    :e2, 2025-11-07, 25d, color:#E0E0E0
+    Recording                       :e3, 2025-11-07, 25d, color:#E0E0E0
+    Final Report                    :e4, 2025-11-07, 25d, color:#E0E0E0
 </pre>
 
 <script type="module">
