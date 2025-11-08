@@ -8,10 +8,9 @@ from sklearn.metrics import (accuracy_score, classification_report, confusion_ma
 
 df = pd.read_csv("hexapod_data_cleaned.csv")
 
-label_col = "Label"
  
-X = df.drop(columns=[label_col])
-y = df[label_col]
+X = df.drop(columns=["Label"])
+y = df["Label"]
 
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
