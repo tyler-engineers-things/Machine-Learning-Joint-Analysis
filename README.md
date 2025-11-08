@@ -29,18 +29,51 @@ We’re tackling this due to its practical relevance, extensions to other resear
 
 ### Data Preprocessing:
 
-We will first find data points with poses or slopes drastically different from most other points in the dataset through RANSAC. This runs until the line with the most inliers is found, discarding all outliers. We may use PyTorch’s torch-ransac3d, which performs data-cleaning. To fill in missing gaps and ensure a smooth dataset, we will use linear regression or K-nearest neighbors based on poses and slopes present ensuring the data accounts for all possibilities during robot function. For effective data analysis, we will normalize the pose data of the robot to generate a baseline for the robot when it no longer relies on our supervised dataset.
+Our data preprocessing pipeline consists of three main steps implemented in `Data Cleaning.py`:
+
+1. **Missing Value Imputation**: We implemented K-Nearest Neighbors (KNN) imputation with 3 neighbors to replace NaN entries with values estimated from nearby samples. This was done to ensure missing data points are filled in such a way that the local structure of data was maintained.
+
+2. **Outlier Removal**: We computed the Z-scores of each feature and removed data points that had an absolute Z-score more than 3 standard deviations from the mean. This got rid of outliers that could negatively impact model performance.
+
+3. **Feature Scaling**: We applied a StandardScaler that normalized all the features to have zero mean and a variance of one. This was done to ensure each features contributed equally to the model regardless of its original scale.
+
+The preprocessing reduced our dataset from the original size to a cleaned version with no missing values and improved data quality for machine learning analysis.
 
 ### ML Algorithms:
 
-We will use supervised learning due to possessing data labeled with respect to the number of joint faults that have occurred in the pose transformation. To effectively analyze pose and slope data, we will use logistic regression to determine feature combinations resulting in faulty joints and ones more conducive to the robot’s design. Logistic regression will be done through PyTorch’s torch.nn.Module.
+**Current Implementation**
 
-When we transition the model to the simulation we won’t use supervised learning as the data generated here will be unlabeled. Therefore, when transitioning past the original dataset we’ll use K-means or other unsupervised learning to ensure the model functions correctly based on new pose and slope estimates. Our simulations will run through MuJoCo, and K-means will run using PyTorch’s torch_kmeans.
+We implemened a logistic regression as our classification model. This was done using Sci-kit learn's LogisticRegression model with multinomial classification, L-BFGS solver, regularization parameter C=1
 
-The algorithms chosen for simulations should have lower computational requirements and time complexity due to robotic computing constraints.
+The logistic regression model analyzes hexapod pose and slope data to determine feature combinations that result in fault joints. This approach allowed us to identify the most important features for fault detection and provided interpretable coefficients for each class.
+
+**Future Implementations**
+We plant to implement additional algorithsm for comparison against Logistic Regression
+- K-means clustering
+- Support Vector Machine
+
 
 
 ## Results:
+
+## Exploratory Data Analysis
+**Feature Correlation Analysis:**
+![Feature Correlation Matrix](src/feature_correlation_heatmap.png)
+The correlation heatmap shows us the relationship between features
+- Most features show weak to moderate correlations, indicating good feature diversity
+- `slop(x/z)` and `slop(1/z)` show a correlation of r-1 suggesting that they are redundant
+
+**Feature Distribution Analysis**
+![Feature Distributions by Class](src/feature_distributions.png)
+
+
+**Logistic Regression Model Performance**
+![Learning Curves](src/learning_curves.png)
+
+![ROC Curves](src/roc_curves.png)
+
+Logistic Regression achieves near-perfect AUC scores of 1 for most classes indicating it is easily able to distringuish different fault types
+The learning curves show that the model converges very quickly with high testing and validation accuracy (~96.5 and ~96.2 respectively)
 
 ### Quantitative Metrics:
 
