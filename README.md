@@ -58,7 +58,7 @@ We plant to implement additional algorithsm for comparison against Logistic Regr
 
 ## Exploratory Data Analysis
 **Feature Correlation Analysis:**
-![Feature Correlation Matrix](feature_correlation_heatmap.png)
+![Feature Correlation Matrix](heatmap.png)
 The correlation heatmap shows us the relationship between features
 - Most features show weak to moderate correlations, indicating good feature diversity
 - `slop(x/z)` and `slop(1/z)` show a correlation of r-1 suggesting that they are redundant
@@ -68,7 +68,7 @@ The correlation heatmap shows us the relationship between features
 
 
 **Logistic Regression Model Performance**
-![Learning Curves](learning_curves.png)
+![Learning Curves](learning_curve.png)
 
 ![ROC Curves](roc_curves.png)
 
