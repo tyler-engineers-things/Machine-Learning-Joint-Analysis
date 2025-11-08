@@ -61,7 +61,7 @@ We plant to implement additional algorithsm for comparison against Logistic Regr
 ![Feature Correlation Matrix](heatmap.png)
 The correlation heatmap shows us the relationship between features
 - Most features show weak to moderate correlations, indicating good feature diversity
-- `slop(x/z)` and `slop(1/z)` show a correlation of r-1 suggesting that they are redundant
+- `slop(x/z)` and `slop(1/z)` show a correlation of r=1 suggesting that they are redundant
 
 **Feature Distribution Analysis**
 ![Feature Distributions by Class](feature_distributions.png)
