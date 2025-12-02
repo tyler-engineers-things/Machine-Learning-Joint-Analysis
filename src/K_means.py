@@ -82,15 +82,8 @@ plt.title("K-means Confusion Matrix (Test)")
 plt.xlabel("Predicted label")
 plt.ylabel("True label")
 
-plt.xticks(
-    ticks=np.arange(len(y_train.unique())),
-    labels=sorted(y_train.unique()),
-    rotation=90
-)
-plt.yticks(
-    ticks=np.arange(len(y_train.unique())),
-    labels=sorted(y_train.unique())
-)
+plt.xticks(ticks=np.arange(len(y_train.unique())), labels=sorted(y_train.unique()), rotation=90)
+plt.yticks(ticks=np.arange(len(y_train.unique())), labels=sorted(y_train.unique()))
 
 plt.tight_layout()
 plt.show()
@@ -109,12 +102,7 @@ for c in range(n_clust):
     c_size = c_sil_values.shape[0]
     y_upper = y_lower + c_size
 
-    plt.fill_betweenx(
-        np.arange(y_lower, y_upper),
-        0,
-        c_sil_values,
-        alpha=0.7
-    )
+    plt.fill_betweenx(np.arange(y_lower, y_upper), 0, c_sil_values, alpha=0.7)
     plt.text(-0.05, y_lower + 0.5 * c_size, str(c))
     y_lower = y_upper + 10
 
@@ -133,23 +121,13 @@ X_test_pca = pca.fit_transform(X_test_scaled)
 plt.figure(figsize=(12, 5))
 
 plt.subplot(1, 2, 1)
-scatter1 = plt.scatter(
-    X_test_pca[:, 0],
-    X_test_pca[:, 1],
-    c=y_test,
-    s=15
-)
+scatter1 = plt.scatter(X_test_pca[:, 0], X_test_pca[:, 1], c=y_test, s=15)
 plt.title("Test Data (True Labels)")
 plt.xlabel("PCA 1")
 plt.ylabel("PCA 2")
 
 plt.subplot(1, 2, 2)
-scatter2 = plt.scatter(
-    X_test_pca[:, 0],
-    X_test_pca[:, 1],
-    c=y_test_kmeans_pred,
-    s=15
-)
+scatter2 = plt.scatter(X_test_pca[:, 0], X_test_pca[:, 1], c=y_test_kmeans_pred, s=15)
 plt.title("Test Data (K-means Predicted Labels)")
 plt.xlabel("PCA 1")
 plt.ylabel("PCA 2")
