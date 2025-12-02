@@ -75,10 +75,6 @@ The correlation heatmap shows us the relationship between features
 Logistic Regression achieves near-perfect AUC scores of 1 for most classes indicating it is easily able to distringuish different fault types
 The learning curves show that the model converges very quickly with high testing and validation accuracy (~96.5 and ~96.2 respectively)
 
-### Quantitative Metrics:
-
-To quantify our ML techniques, we will use various loss and scoring functions. When working with logistic regression, we will use Log Loss as our loss function which is intended for logistic regression algorithms, and will also use Area Under the ROC Curve (AUC). When working with Linear Regression throughout our project, we will use Mean Squared Error (MSE) to quantify how error-prone our Linear Regressions were. When working with K-means, we will utilize Silhouette Analysis to determine whether points fall close to their respective clusters.
-
 ### Project Goals and Expected Results:
 
 With this project, we expect to minimize or eliminate joint failures ensuring robots may cooperate with fragile beings and objects. With the mass proliferation of robots, it is crucial projects put forth ensure robots remain safe for use by average laypeople, and failing this will result in unintended and unnecessary consequences. Our project intends to promote sustainable and ethical use of robotics, and if successful may contribute greatly to reducing robotics-related injuries.
