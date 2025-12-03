@@ -43,11 +43,13 @@ The preprocessing reduced our dataset from the original size to a cleaned versio
 
 **Current Implementation**
 
-We implemened a logistic regression as our classification model. This was done using Sci-kit learn's LogisticRegression model with multinomial classification, L-BFGS solver, regularization parameter C=1
+We implemented a logistic regression as our classification model. This was done using Sci-kit learn's LogisticRegression model with multinomial classification, L-BFGS solver, regularization parameter C=1
 
 The logistic regression model analyzes hexapod pose and slope data to determine feature combinations that result in fault joints. This approach allowed us to identify the most important features for fault detection and provided interpretable coefficients for each class.
 
-The Support Vector Machine (SVM) model works by finding a hyperplane that separates data points of different classes by the maximum margin between the classes. We used sci-kit learn's SVC (support vector classifier) model for this project. We set the kernel to be rbf
+The Support Vector Machine (SVM) model works by finding a hyperplane that separates data points of different classes by the maximum margin between the classes. We used sci-kit learn's SVC (support vector classifier) model for this project. We set the kernel to be rbf.
+
+Aside from our supervised learning algorithms, we also used an unsupervised learning algorithm to analyze the labeling of the dataset itself. This algorithm was K-means, which we used to create clusters that we subsequently compared with the provided labeling. Our K-Means algorithm implemented with Scikit Learn's KMeans model, and this model was set to have the same number of clusters as there were unique labels, that being 19, and was seeded with a random_state value of 0. In the future, we may attempt to augment the dataset using simulated and real-life robotics data which will be verified using K-means clustering to ensure our new data can continue to be clustered nicely with the current data provided.
 
 ## Results:
 
