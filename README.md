@@ -61,6 +61,8 @@ The correlation heatmap shows us the relationship between features
 **Feature Distribution Analysis**
 ![Feature Distributions by Class](feature_distributions.png)
 
+The feature distributions of the X, Y, and Z indicate that for the X and Z directions there is a wide spread motion of the hexapod and for the Y direction the hexapod joints can't move that much. The distributions of the slopes show sharp peaks at different combinations of X and Z positions. This is good because it means that there are some very specific combinations of X and Z positions that indicates a faulty joint. This means models should be able to pick up on these peaks and calssify faulty joints properly. 
+
 
 **Logistic Regression Model Performance**
 ![Learning Curves](learning_curve.png)
