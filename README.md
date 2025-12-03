@@ -65,14 +65,27 @@ The feature distributions of the X, Y, and Z indicate that for the X and Z direc
 
 
 **Logistic Regression Model Performance**
+
+The logistic regression model achieved 96% accuracy on the validation set.
+
 ![Learning Curves](learning_curve.png)
+The learning curve shows that the logistic regression model quickly achieves a high performance and then plautaus. The validation accuracy is initially lower than the training accuracy, but the validation accuracy converges to the training accuracy indicating the model isn't overfitting.
 
 ![ROC Curves](roc_curves.png)
 
 Logistic Regression achieves near-perfect AUC scores of 1 for most classes indicating it is easily able to distringuish different fault types
 The learning curves show that the model converges very quickly with high testing and validation accuracy (~96.5 and ~96.2 respectively)
 
+**K Means Clustering Performance**
+
+![Silhouette Score](k_means_silhouette.png)
+
+![PCA Display](k_means_pca.png)
+
 **SVM Model Performance**
+
+The SVM achieved an accuracy of 96% on the validation set
+
 ![Learning Curves](svm_learning_curve.png)
 The learning curves show the model's performance on the training and validation set as it trains. This helps us know if the model is overfitting or underfitting. Since the gap between the accuracy of the validation set and the training set is small, this indicates that the model is generalizing well to the unseen data and is not overfitting or underfitting. 
 
@@ -89,9 +102,24 @@ Precision indicates how many items the model identified as positive that were ac
 The validation curves show how changing the C and Gamma hyperparameters affects the model's performance. C controls the trade off between a smooth decision boundary and classification accuracy while gamma controls how far the influence of a single training example reaches. A lower C indicates a simpler model while a higher C indicates a more complex model. These graphs show performance plataeus at high C indicating we are not overfitting and optimal performance from C = 1 to C = 10. For Gamma we also see a wide range of acceptable values from 10^-2 to 10^0, while the performance drops at extremely high and low values of Gamma. We chose to use gamma="scale" which automatically tunes the value of gamma based on the features.
 
 
-### Project Goals and Expected Results:
+### Model Comparison
 
-With this project, we expect to minimize or eliminate joint failures ensuring robots may cooperate with fragile beings and objects. With the mass proliferation of robots, it is crucial projects put forth ensure robots remain safe for use by average laypeople, and failing this will result in unintended and unnecessary consequences. Our project intends to promote sustainable and ethical use of robotics, and if successful may contribute greatly to reducing robotics-related injuries.
+
+### Next Steps
+For this project we would like to explore some of the more advanced models that were used in the literature to get higher than 96% accuracy on hexapod joint fault detection. Some of these models include neural networks and Two-States Random Forests (or other Random Forest variations). We believe these models would be able to achieve a higher accuracy. We would also like the augment the data from this dataset with more data from other datasets and also with simulated data from Georgia Tech's Robotarium. We believe adding a variety of data will require the models to generalize better allowing them to better detect faults in a wider array of situations. 
+
+
+### Directory Structure
+/src/Data Cleaning.py: This file was used to clean the data by removing outliers and scaling it properly
+/src/K_means_vis.ipynb: This notebook was used to generate the analytics and visualizations for the K means clustering model
+/src/K_means.py: This file was used to create and train the K means model
+/src/model_1.ipynb: This notebook was used to do exploratory data analysis and generate visualizations for the logisitic regression model
+/src/Model.py: This file was used to create and train the logistic regression model
+/src/svm_vis.ipynb: This notebook was used to generate visualizations for the svm
+/src/svm.py: This file was used to create and train the SVM model
+/src/Hexapod_One_Joint.csv: This is the raw data from Kaggle in csv format
+/src/hexapod_data_cleaned.csv: This the cleaned data stored in csv format
+*.png: These are the saved visualizations for the report
 
 
 ## References
