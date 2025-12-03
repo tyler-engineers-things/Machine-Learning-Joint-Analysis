@@ -49,7 +49,7 @@ The logistic regression model analyzes hexapod pose and slope data to determine 
 
 The Support Vector Machine (SVM) model works by finding a hyperplane that separates data points of different classes by the maximum margin between the classes. We used sci-kit learn's SVC (support vector classifier) model for this project. We set the kernel to be rbf.
 
-Aside from our supervised learning algorithms, we also used an unsupervised learning algorithm to analyze the labeling of the dataset itself. This algorithm was K-means, which we used to create clusters that we subsequently compared with the provided labeling. Our K-Means algorithm implemented with Scikit Learn's KMeans model, and this model was set to have the same number of clusters as there were unique labels, that being 19, and was seeded with a random_state value of 0. In the future, we may attempt to augment the dataset using simulated and real-life robotics data which will be verified using K-means clustering to ensure our new data can continue to be clustered nicely with the current data provided.
+Aside from our supervised learning algorithms, we also used an unsupervised learning algorithm to analyze the labeling of the dataset itself. This algorithm was K-means, which we used to create clusters that we subsequently compared with the provided labeling. Our K-Means algorithm was implemented with Scikit Learn's KMeans model, and this model was set to have the same number of clusters as there were unique labels, that being 19, and was seeded with a random_state value of 0. In the future, we may attempt to augment the dataset using simulated and real-life robotics data which will be verified using K-means clustering to ensure our new data can continue to be clustered nicely with the current data provided.
 
 ## Results:
 
@@ -80,9 +80,15 @@ The learning curves show that the model converges very quickly with high testing
 
 **K Means Clustering Performance**
 
+The average silhouette score from K-Means clustering was 0.4253.
+
 ![Silhouette Score](k_means_silhouette.png)
 
+Many of our clusters did manage to receive high silhouette scores, but the overall silhouette score was low enough to classify our clustering as weak. This means it may have been a less optimal algorithm to use with our data in comparison to the other models we developed.
+
 ![PCA Display](k_means_pca.png)
+
+This PCA visualization has reduced the dimensionality of the data to an easily visualizable 2D space. As can be seen in the visualization, some of the clusters were made very well and align well with the initial labels. However, some clusters were created poorly, and don't align well with their assigned labels. Many labels were also split in half into separate clusters, which may help us determine how the model could be improved in the future or perhaps replaced with another model.
 
 **SVM Model Performance**
 
