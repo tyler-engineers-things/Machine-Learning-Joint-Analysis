@@ -103,7 +103,7 @@ The validation curves show how changing the C and Gamma hyperparameters affects 
 
 
 ### Model Comparison
-
+Comparing our three completed algorithms, we find that logistic regression and Support Vector Machine were both far more successful than our K-means implementation in accurately detecting faults. Support Vector Machine had an accuracy of 96. The logistic regression model also achieved near perfect accuracy and AUC curves. Meanwhile we calculated the average silhouette score for K-means to be only 0.4253 indicating relatively weak clusters. Our supervised models performed better as they used the true labels to analyze fault types, whereas K-Means was unsupervised and tried to form clusters that did not naturally exist in our data. In the future, we could engineer more cluster friendly features or reduce dimensionality in order to achieve a better score for K-means.
 
 ### Next Steps
 For this project we would like to explore some of the more advanced models that were used in the literature to get higher than 96% accuracy on hexapod joint fault detection. Some of these models include neural networks and Two-States Random Forests (or other Random Forest variations). We believe these models would be able to achieve a higher accuracy. We would also like the augment the data from this dataset with more data from other datasets and also with simulated data from Georgia Tech's Robotarium. We believe adding a variety of data will require the models to generalize better allowing them to better detect faults in a wider array of situations. 
