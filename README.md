@@ -111,16 +111,24 @@ For this project we would like to explore some of the more advanced models that 
 
 ### Directory Structure
 /src/Data Cleaning.py: This file was used to clean the data by removing outliers and scaling it properly
-/src/K_means_vis.ipynb: This notebook was used to generate the analytics and visualizations for the K means clustering model
-/src/K_means.py: This file was used to create and train the K means model
-/src/model_1.ipynb: This notebook was used to do exploratory data analysis and generate visualizations for the logisitic regression model
-/src/Model.py: This file was used to create and train the logistic regression model
-/src/svm_vis.ipynb: This notebook was used to generate visualizations for the svm
-/src/svm.py: This file was used to create and train the SVM model
-/src/Hexapod_One_Joint.csv: This is the raw data from Kaggle in csv format
-/src/hexapod_data_cleaned.csv: This the cleaned data stored in csv format
-*.png: These are the saved visualizations for the report
 
+/src/K_means_vis.ipynb: This notebook was used to generate the analytics and visualizations for the K means clustering model
+
+/src/K_means.py: This file was used to create and train the K means model
+
+/src/model_1.ipynb: This notebook was used to do exploratory data analysis and generate visualizations for the logisitic regression model
+
+/src/Model.py: This file was used to create and train the logistic regression model
+
+/src/svm_vis.ipynb: This notebook was used to generate visualizations for the svm
+
+/src/svm.py: This file was used to create and train the SVM model
+
+/src/Hexapod_One_Joint.csv: This is the raw data from Kaggle in csv format
+
+/src/hexapod_data_cleaned.csv: This the cleaned data stored in csv format
+
+*.png: These are the saved visualizations for the report
 
 ## References
 
