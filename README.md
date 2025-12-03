@@ -47,12 +47,7 @@ We implemened a logistic regression as our classification model. This was done u
 
 The logistic regression model analyzes hexapod pose and slope data to determine feature combinations that result in fault joints. This approach allowed us to identify the most important features for fault detection and provided interpretable coefficients for each class.
 
-**Future Implementations**
-We plant to implement additional algorithsm for comparison against Logistic Regression
-- K-means clustering
-- Support Vector Machine
-
-
+The Support Vector Machine (SVM) model works by finding a hyperplane that separates data points of different classes by the maximum margin between the classes. We used sci-kit learn's SVC (support vector classifier) model for this project. We set the kernel to be rbf
 
 ## Results:
 
@@ -74,6 +69,23 @@ The correlation heatmap shows us the relationship between features
 
 Logistic Regression achieves near-perfect AUC scores of 1 for most classes indicating it is easily able to distringuish different fault types
 The learning curves show that the model converges very quickly with high testing and validation accuracy (~96.5 and ~96.2 respectively)
+
+**SVM Model Performance**
+![Learning Curves](svm_learning_curve.png)
+The learning curves show the model's performance on the training and validation set as it trains. This helps us know if the model is overfitting or underfitting. Since the gap between the accuracy of the validation set and the training set is small, this indicates that the model is generalizing well to the unseen data and is not overfitting or underfitting. 
+
+![ROC Curves](svm_roc_curve.png)
+The ROC curves show the trade off between the True positive rate an the false positive rate. The closer the curves are to the top left and the higher the area under the curve (AUC), the better. The dotted line shows the auc curve for random guessing. The AUC for all the curves is between 0.99-1.00 which indicates the model has a strong ability to separate each fault class from the others.
+
+![Confusion Matrix](svm_confusion_matrix.png)
+The confusion matricies show that many of the model predictions are the same as the true labels for the joint failures. This indicates strong performance from the SVM with some rare misclassifications. 
+
+![Precision vs. Recall](svm_precision_recall.png)
+Precision indicates how many items the model identified as positive that were actually positive while recall measures how many of the actual positive items the model correctly identified. The closer the curves are to the top right of the graph, the better. This indicates a great balance betweeen precision and recall where there are few false positives and actual faults. 
+
+![Validation Curves](svm_validation_curve.png)
+The validation curves show how changing the C and Gamma hyperparameters affects the model's performance. C controls the trade off between a smooth decision boundary and classification accuracy while gamma controls how far the influence of a single training example reaches. A lower C indicates a simpler model while a higher C indicates a more complex model. These graphs show performance plataeus at high C indicating we are not overfitting and optimal performance from C = 1 to C = 10. For Gamma we also see a wide range of acceptable values from 10^-2 to 10^0, while the performance drops at extremely high and low values of Gamma. We chose to use gamma="scale" which automatically tunes the value of gamma based on the features.
+
 
 ### Project Goals and Expected Results:
 
